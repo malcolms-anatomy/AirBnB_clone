@@ -14,3 +14,19 @@ You can start the command interpreter in interactive mode by running:
 ```sh
 $ ./console.py
 
+Here are some examples of using the command interpreter:
+
+(hbnb) create User
+(e3c01326-6d87-4e5a-b7b4-09361ecf373d)
+(hbnb) show User e3c01326-6d87-4e5a-b7b4-09361ecf373d
+[User] (e3c01326-6d87-4e5a-b7b4-09361ecf373d) {'id': 'e3c01326-6d87-4e5a-b7b4-09361ecf373d', 'created_at': '2023-06-28T20:18:33.084650', 'updated_at': '2023-06-28T20:18:33.084650'}
+(hbnb) update User e3c01326-6d87-4e5a-b7b4-09361ecf373d name "John Doe"
+(hbnb) show User e3c01326-6d87-4e5a-b7b4-09361ecf373d
+[User] (e3c01326-6d87-4e5a-b7b4-09361ecf373d) {'id': 'e3c01326-6d87-4e5a-b7b4-09361ecf373d', 'created_at': '2023-06-28T20:18:33.084650', 'updated_at': '2023-06-28T20:19:33.084650', 'name': 'John Doe'}
+(hbnb) all User
+[[User] (e3c01326-6d87-4e5a-b7b4-09361ecf373d) {'id': 'e3c01326-6d87-4e5a-b7b4-09361ecf373d', 'created_at': '2023-06-28T20:18:33.084650', 'updated_at': '2023-06-28T20:19:33.084650', 'name': 'John Doe'}]
+(hbnb) destroy User e3c01326-6d87-4e5a-b7b4-09361ecf373d
+(hbnb) all User
+[]
+(hbnb) quit
+
